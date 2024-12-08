@@ -8,7 +8,6 @@ import { RxExit } from "react-icons/rx";
 import { HiPlus } from "react-icons/hi2";
 import { IoCloseOutline } from "react-icons/io5";
 import { useState } from "react";
-import { LiaFileInvoiceSolid } from "react-icons/lia";
 import { FiEdit } from "react-icons/fi";
 import { FiUsers } from "react-icons/fi";
 import { FiFileText } from "react-icons/fi";
@@ -16,6 +15,7 @@ import { IoWalletOutline } from "react-icons/io5";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import { LuFileType2 } from "react-icons/lu";
 import { LuWallet } from "react-icons/lu";
+import bill from "../../Assets/bill.jpg"
 
 
 
@@ -62,8 +62,8 @@ const Dashboard = () => {
             <FiFileText />
             <p>Contracts</p>
             </div>
-            <div className="board_list">
-              <RiCompassDiscoverLine />
+            <div className="board_list1">
+              <img src={bill} alt="" />
               <p>Billing</p>
             </div>
             <div className="board_list">

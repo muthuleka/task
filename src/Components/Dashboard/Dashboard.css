@@ -103,7 +103,6 @@
 }
 .board_list{
     width: 100%;
-    
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -111,6 +110,23 @@
     gap: 10px;
     margin-bottom: 1px;
     padding: 10px;
+}
+.board_list1{
+    width: 100%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 1px;
+    padding: 10px;
+    color: black;
+}
+.board_list1 img{
+    width: 15px;
+    height: 15px;
+    /* background-color: aquamarine; */
+    color: black;
 }
 .board_list p{
     font-size: 14px;
@@ -561,7 +577,7 @@
     width: 35px;
     height: 35px;
     padding: 10px;
-    background-color: rgba(221, 219, 222, 0.622);
+    background-color: rgba(230, 228, 231, 0.622);
     font-size: 15px;
     border-radius: 8px;
     color: black;
