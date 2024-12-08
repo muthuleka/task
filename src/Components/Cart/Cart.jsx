@@ -2,16 +2,19 @@ import React from 'react'
 import { useState } from 'react';
 
 const Cart = () => {
-    const [users, setUsers] = useState([
+    const [student, setstudent] = useState([
         { id: 1, name: "Muthuleka", role: " Front End Developer", status: "Absent" },
         { id: 2, name: "Shalini", role: "Back end developer", status: "Absent" },
       ]);
-      const updateStatus = (id, newStatus) => {
-        const updatedUsers = users.map(user =>
-          user.id === id ? { ...user, status: newStatus } : user
-        );
-        setUsers(updatedUsers);
-      };
+
+        function updatepresent(id,data) {
+        console.log("id:",id);
+        console.log("values:",data);
+        const mydata = student.map(student =>
+        student.id === id ? { ...student, status: data } : student)
+        console.log(mydata);
+        setstudent(mydata)
+      }
   return (
     <>
     <div>
@@ -26,16 +29,16 @@ const Cart = () => {
           </tr>
         </thead>
         <tbody>
-          {users.map(user => (
-            <tr key={user.id}>
-              <td>{user.name}</td>
-              <td>{user.role}</td>
-              <td>{user.status}</td>
+          {student.map(student => (
+            <tr key={student.id}>
+              <td>{student.name}</td>
+              <td>{student.role}</td>
+              <td>{student.status}</td>
               <td>
-                <button onClick={() => updateStatus(user.id, "Present")}>
+                <button onClick={() => updatepresent(student.id, "Present")}>
                   Present
                 </button>
-                <button onClick={() => updateStatus(user.id, "Absent")}>
+                <button onClick={() => updatepresent(student.id, "Absent")}>
                   Absent
                 </button>
               </td>

@@ -1,0 +1,640 @@
+.dashboard{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    position: relative;
+}
+.board_left{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right: 1px solid gainsboro;
+    /* padding: 20px; */
+}
+.logo{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.logo p{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Roboto", serif;
+}
+.logo_btn{
+    width: 100%;
+    height: 70px;
+    /* background-color: aquamarine; */
+    background-color: rgba(243, 243, 246, 0.618);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    /* margin-top: 10px; */
+}
+.logo_btn1{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+
+}
+.logo_btn p{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.logo_btn h1{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: gray;
+}
+.gupta{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.dg{
+   width: 50px;
+   height: 43px;
+   background-color: black;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+   border-radius: 100%;
+   font-size: 10px;
+}
+.list{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* background-color: aquamarine; */
+}
+.board_list{
+    width: 100%;
+    
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 1px;
+    padding: 10px;
+}
+.board_list p{
+    font-size: 14px;
+    margin-top: 0px;
+    font-weight:700;
+    font-family: "Quicksand", serif;
+}
+
+ 
+.board_list:hover{
+   
+    background-color:rgb(225, 225, 245);
+    border-radius: 8px;
+}
+
+
+.cash1{
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.cash{
+    width: 100%;
+    height: 60px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+.cash_i{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: rgb(244, 240, 240);
+    font-size: 25px;
+    color: rgba(55, 54, 54, 0.525);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rupee{
+    width: 100%;
+    height:100%;
+    gap: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rupee h1{
+    font-size: 12px;
+    color: gray;
+    font-weight: 600;
+}
+.rupee p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.rupee_i{
+    font-size: 12px;
+}
+.logout{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    padding: 20px;
+    gap: 10px;
+    border-top: 1px solid gainsboro;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.exit{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 14px;
+}
+.board_right{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 236, 236, 0.232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right_header{
+    width: 80%;
+    height: 100%;
+    padding:  25px 0px;
+    margin-bottom: 40px;
+}
+.bill{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.bill p{
+    font-size: 45px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", serif;
+}
+.bill p span{
+    font-size: 20px;
+    font-weight: 300;
+}
+.lowbalance{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.lowbalance p{
+    color: gray;
+
+}
+.lowbalance button{
+    width: 60px;
+    height: 20px;
+    border-radius: 15px;
+    font-size: 8px;
+    border: none;
+    background-color: rgb(244, 200, 200);
+    color: rgb(238, 92, 92);
+    cursor: pointer;
+}
+.add_btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 80px;
+    border: 1px solid transparent;
+    background-color: rgb(94, 94, 243);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.add_btn p{
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.add_btn span{
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(245, 245, 245, 0.7);
+}
+.plus{
+    color: white;
+}
+.right_container{
+    width: 100%;
+    height: 23%;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.details{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    font-family: "Roboto", serif;
+}
+.cycle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.details h1{
+    font-size: 18px;
+}
+.details h4{
+    font-size: 14px;
+    color: rgb(72, 70, 70);
+    margin-top: 12px;
+   font-weight: 500;
+}
+.details p{
+    font-size: 14px;
+    color: gray;
+    margin-top: 12px;
+}
+.edit{ 
+    font-size: 15px;
+    color: rgb(87, 106, 230);
+}
+.plan{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.plan h2{
+    font-size: 14px;
+    color: rgb(60, 55, 224);
+}
+.sign{
+    font-size: 10px;
+}
+.invoice{
+    width: 100%;
+    height: 35%;
+    margin-top: 40px;
+    font-family: "Roboto", serif;
+}
+.invoice h2{
+    font-size: 18px;
+}
+.in{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.invoice_box{
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color:white;
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-between;
+    border: 1px solid gainsboro;
+    
+}
+.invoice_heading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.invoice_heading h5{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    /* margin-bottom: 10px; */
+    border-bottom: 1px solid gainsboro;
+    padding: 20px;
+    color: rgba(108, 106, 106, 0.695);
+    font-size: 13px;
+}
+.invoice_pdf{
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.invoice_pdf p{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: rgb(27, 27, 27);
+    font-size: 15px;
+}
+
+
+.pdf{
+    padding:6px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: rgb(244, 242, 242);
+    color: rgba(14, 12, 12, 0.525);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.invoice_heading1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.invoice_heading1 h5{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 50px;
+    /* margin-bottom: 10px; */
+    border-bottom: 1px solid gainsboro;
+    padding: 20px 20px 20px 0px;
+    color: rgba(108, 106, 106, 0.695);
+    font-size: 13px;
+}
+.invoice_heading1 h5[title]{
+    color: transparent;
+}
+.invoice_heading1 p{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 13px;
+    color: rgb(27, 27, 27);
+}
+.invoice_heading1 p span{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 0px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+.paid{
+    width: 50px;
+    height: 20px;
+    background-color: rgb(172, 231, 233);
+    border-radius: 20px;
+    color: rgb(2, 110, 2);
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.sign{
+    font-size: 10px;
+}
+.down_btn{
+    width: 150px;
+    height: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+ .invoice_heading1 button{
+    width: 50%;
+    height: 50%;
+    font-size: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+} 
+.invoice_heading1 button span{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 4px;
+    font-size: 12px;
+    background-color: blue;
+}
+
+.popup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    
+}
+.popup1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.977);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.popup_head{
+    width: 28%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Roboto", serif;
+    border: 1px solid gainsboro;
+}
+.pop{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-bottom: 1px solid gainsboro;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500; 
+}
+.close_i{
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    background-color: rgba(221, 219, 222, 0.622);
+    font-size: 15px;
+    border-radius: 8px;
+    color: black;
+}
+.overlay{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.overlay p{
+    
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", serif;
+}
+.overlay h4{
+    font-size: 12px;
+    color: gray;
+    font-size: 500;
+}
+.overlay p span{
+    font-size: 30px;
+    font-weight: 300;
+}
+.overlay_input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btns{
+    width: 100%;
+    padding:15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btns p span{
+    padding: 5px 10px;
+    border-radius: 50px;
+    color: rgb(31, 169, 31);
+    background-color: rgb(199, 213, 199);
+}
+input{
+width: 100%;
+height: 50px;
+border: 1px solid gainsboro;
+border-radius: 10px;
+padding: 10px;
+outline: none;
+
+}
+.overlay1{
+    width: 100%;
+    padding: 10px;
+}
+.overlay_input button{
+    width: 100%;
+    padding:  15px 20px ;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(87, 87, 199);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
