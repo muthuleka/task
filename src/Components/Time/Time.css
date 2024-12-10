@@ -1,0 +1,40 @@
+.timetable{
+    width: 100%;
+    height: 100%;
+    /* background-color: brown; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* padding: 10px; */
+}
+.timetable1{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.timetable1 h3{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(24, 24, 24);
+    font-weight: 500;
+    border: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timetable1 p{
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: rgb(107, 107, 184);
+    justify-content: space-between;
+    border-right: 1px solid gainsboro;
+}

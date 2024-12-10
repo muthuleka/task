@@ -1,0 +1,142 @@
+.day{
+    width: 100%;
+    height:auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.mon{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-right: 1px solid gainsboro;
+}
+.mon h3{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    background-color:#1445a0;
+    color: rgb(24, 24, 24);
+    font-weight: 500;
+    border: 1px solid gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.subject{
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gainsboro;
+
+}
+.physics{
+    width: 80%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: rgb(44, 193, 235);
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.chemistry{
+    width: 80%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: rgb(98, 194, 98);
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.english{
+    width: 80%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: rgb(108, 108, 168);
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.maths{
+    width: 80%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: rgb(228, 228, 138);
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.tamil{
+    width: 80%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: pink;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.computer{
+    width: 80%;
+    height: 40%;
+    border-radius: 15px;
+    background-color: rgb(210, 206, 206);
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.phy{
+    font-size: 12px;
+    font-weight: 500;
+}
+.marry{
+    font-size: 10px;
+}
+.subject1{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gainsboro;
+}
+.break{
+    width: 80%;
+    height: 65%;
+    padding: 15px;
+    border-radius: 60px;
+    background-color: rgb(241, 238, 238);
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.br{
+    font-size: 10px;
+    font-weight: 400;
+}
+.brtime{
+    font-size: 10px;
+}
+
