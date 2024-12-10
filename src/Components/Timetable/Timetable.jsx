@@ -13,8 +13,8 @@ import Time from "../Time/Time";
 import Monday from "../Monday/Monday";
 import Sunday from "../Sunday/Sunday";
 import { useState } from "react";
-import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
 
 
 
@@ -50,25 +50,26 @@ const Timetable = () => {
                   <p>Dashboard</p>
                 </div>
                 <div className="left_list2" onClick={opendiv}>
-              <div className="ta1">
-                <p>
-                  <LiaChalkboardTeacherSolid />
-                </p>
-                <p>Teaching Staff</p>
-                {open ? (
-                  <IoIosArrowDown className="fontsize17px fontweight600 marginleft15px " />
-                ) : (
-                  <IoIosArrowUp className="fontsize17px fontweight600 marginleft15px " />
-                )}{" "}
-              </div>{" "}
-              {open && (
-                <div className="dropdown">
-                  <div className="time"></div>
-                  <div className="time1"></div>
-                  <div className="time2"></div>
+                 <div className="drop">
+                 <div className="dropdown">
+                  <p className="teach_i">
+                    <LiaChalkboardTeacherSolid />
+                  </p>
+                  <p>Teaching Staff</p>
+                  </div>
+                  {open ? <IoIosArrowDown /> : <IoIosArrowUp />
+                  }
+
+                 </div>
+                  {open && <div className="dropdown_list">
+                    <div className="dropdown_list1"></div>
+                    <div className="dropdown_list2"></div>
+                    <div className="dropdown_list3"></div>
+
+                  </div>}
+
+
                 </div>
-              )}
-            </div>
                 <div className="left_list1">
                   <p>
                     <CiMedicalClipboard />
@@ -113,7 +114,7 @@ const Timetable = () => {
                 <button className="class">Class</button>
                 <button className="teacher">Teacher</button>
               </div>
-              <HiPlusSmall className="plus" />
+            <span><HiPlusSmall className="plus"/></span>
             </div>
             <div className="select_box">
               <div className="select_box1">

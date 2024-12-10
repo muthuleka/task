@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: gainsboro;
+    background-color: whitesmoke;
     overflow: hidden;
 }
 .timetable_head{
@@ -13,6 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .timetable_left{
     width: 15%;
@@ -35,6 +36,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 10px;
+
     
 }
 .left_head img{
@@ -59,6 +62,8 @@
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    padding: 10px;
+
 }
 .left_list1 p{
     font-size: 15px;
@@ -67,11 +72,12 @@
     width: 100%;
     height: 50px;
     transition: 1s;
-    background-color: rgb(106, 106, 181);
+    background-color: #1445a0;
     border-radius: 10px;
     border: 1px solid transparent;
     border: none;
-
+    color: white;
+    transition: 1s;
 }
 .left_img{
     width: 100%;
@@ -117,8 +123,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 10px;
+    padding: 20px 20px;
     overflow-y: scroll;
+}
+.timetable_right::-webkit-scrollbar{
+    display: none;
 }
 
  .time{
@@ -140,12 +149,14 @@
     color: rgba(0, 0, 0, 0.622);
 }
 .right_btn{
-    width: 100%;
+    width: 95%;
     border-radius: 50px;
-    background-color: gainsboro;
+    background-color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 25px;
+
 }
 .class_btn{
     width: auto;
@@ -155,7 +166,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 25px;
 }
 .class{
     padding: 10px 50px;
@@ -171,13 +181,18 @@
     color: black;
     border: none;
 }
-.plus{
-    width: 60px;
-    height: 35px;
-    border-radius: 30px;
-    background-color:  #1445a0;
-    color: white;
-    border: none;
+.right_btn span{
+    padding: 10px 25px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1445a0;
+}
+.right_btn span .plus{
+    font-size: 20px;
+    
+    
 }
 .select_box{
     width: 50%;
@@ -241,12 +256,14 @@
     background-color: white;
 }
 .table{
-    width: 100%;
+    width: 95%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: white;
+    padding: 15px 15px 15px 0px;
+    border: 1px solid gainsboro;
 }
 .days{
         width: 100%;
@@ -264,121 +281,143 @@
     justify-content: space-between;
     gap: 5px;
 }
-.ta1{
+.left_list2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+
+}
+.left_list2 p{
+    font-size: 15px;
+}
+.left_list2:hover{
+    width: 100%;
+    transition: 1s;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    border: none;
+
+}
+.dropdown{
+    width: 100%;
+    display: flex;
+}
+.teach_i{
+    margin-right: 10px;
+}
+.dropdown_list{
+    width: 100%;
+    border-left: 1px solid rgb(13, 13, 13);
+    font-size: 15px;
+    position: relative;
+}
+.dropdown_list::before{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 44px;
+    background-color: white;
+    left: -20px;
+    bottom: -0.5px;
+    
+    border-radius: 20px;
+
+    
+}
+.drop{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.time{
-padding: 20px;
-border-bottom: 2px solid gray;
-border-bottom-left-radius: 20px;
-position: relative;
-margin-bottom: 10px;
-border-bottom-left-radius: 10px;
-
-}
-.time::before{
+.dropdown_list1{
     width: 90%;
-    position: absolute;
-    left: 15px;
-    bottom: -18px;
-    content: "Time Table Management";
-    border-radius: 8px;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    transition: 0.7s;
-
-}
-.time1{
-    padding: 20px;
-border-bottom: 2px solid gray;
-position: relative;
-border-bottom-left-radius: 10px;
-
-margin-bottom: 10px;
-}
-.time1::before{
-    width: 90%;
-    position: absolute;
-    left: 15px;
-    bottom: -18px;
-    content: "Leave Management";
-    border-radius: 8px;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    transition: 0.7s;
-
-}
-.time1:hover::before {
-    background-color: #1445a0;
-    color: white;
-}
-.time2:hover::before {
-    background-color:#1445a0;
-    color: white;
-}
-.time:hover::before {
-    background-color: #1445a0;
-    color: white;
-}
-
-.time2{
-    padding: 20px;
-border-bottom: 2px solid gray;
-border-bottom-left-radius: 10px;
-position: relative;
-
-margin-bottom: 10px;
-}
-.time2::before{
-    width: 90%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    left: 15px;
-    bottom: -18px;
-    content: "Exam Management";
-    border-radius: 8px;
-    padding: 8px;
-    background-color: white;
-    transition: 0.7s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.left_list2{
-    display: flex;
-    gap: 10px;
-    /* padding: 15px; */
-    border-radius: 12px;
-    cursor: pointer;
-    font-weight: 300;
-    flex-direction: column;
-    gap: 10px;
-}
-.dropdown{
-    width: 100%;
-    height: 100%;
-    font-size: 10px;
-    z-index: 999;
-    border-left: 1px solid gray;
+    padding: 10px;
     position: relative;
+    border-bottom-left-radius:  7px;
+    border-bottom: 1px solid rgb(13, 13, 13);
+    margin-bottom: 40px;
 }
-.dropdown::before{
+.dropdown_list1::before{
+    width: 90%;
     position: absolute;
-    content: "";
-    width: 10px;
-    height: 20px;
+    content: "The Table Management";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color:white;
+    border-radius: 10px;
+    left: 10px;
+    bottom: -18px;
+    color: black;
+    transition: 1s;
+    font-size: 12px;
+}
+.dropdown_list1:hover::before{
+    background-color:  #1445a0;
+    color: white;
+
+}
+.dropdown_list2{
+    width: 90%;
+    padding: 10px;
+    position: relative;
+    border-bottom-left-radius:  7px;
+    border-bottom: 1px solid rgb(13, 13, 13);
+    margin-bottom: 40px;
+}
+.dropdown_list2::before{
+    width: 90%;
+    position: absolute;
+    content: "Leave Management";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
     background-color: white;
-    bottom: -4px;
-    left: -4px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
+    left: 10px;
+    bottom: -18px;
+    color: black;
+    transition: 1s;
+    font-size: 12px;
+}
+.dropdown_list2:hover::before{
+    background-color:  #1445a0;
+    color: white;
+
+}
+.dropdown_list3{
+    width: 90%;
+    padding: 10px;
+    position: relative;
+    border-bottom-left-radius:  7px;
+    border-bottom: 1px solid rgb(13, 13, 13);
+    margin-bottom: 40px;
+}
+.dropdown_list3::before{
+    width: 90%;
+    position: absolute;
+    content: "Exam Management";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color:white;
+    border-radius: 10px;
+    left: 10px;
+    bottom: -18px;
+    color: black;
+    transition: 1s;
+    font-size: 12px;
+}
+.dropdown_list3:hover::before{
+    background-color:  #1445a0;
+    color: white;
+
 }
